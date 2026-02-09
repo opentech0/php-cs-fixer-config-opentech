@@ -1,0 +1,31 @@
+{
+  "name": "opentech/php-cs-fixer-config-opentech",
+  "description": "Provides a configuration factory and multiple rule sets for opentech Medical.",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Open Tech",
+      "email": "opentech.dev0@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/opentech0/php-cs-fixer-config-opentech",
+  "support": {
+    "issues": "https://github.com/opentech0/php-cs-fixer-config-opentech/issues",
+    "source": "https://github.com/opentech0/php-cs-fixer-config-opentech"
+  },
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-filter": "*",
+    "friendsofphp/php-cs-fixer": "~3.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "opentech\\PhpCsFixer\\Config\\": "src"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}

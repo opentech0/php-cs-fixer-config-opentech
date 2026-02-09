@@ -1,7 +1,7 @@
 # Installation
 
 ```bash
-composer require antipodes/php-cs-fixer-config-antipodes --dev
+composer require opentech/php-cs-fixer-config-opentech --dev
 ```
 
 ## Usage
@@ -10,7 +10,7 @@ composer require antipodes/php-cs-fixer-config-antipodes --dev
 
 Pick one of the rule sets:
 
-- [`Antipodes\PhpCsFixer\Config\RuleSet\Php74`](src/RuleSet/Php74.php)
+- [`opentech\PhpCsFixer\Config\RuleSet\Php74`](src/RuleSet/Php74.php)
 
 Create a configuration file `.php-cs-fixer.dist.php` in the root of your project:
 
@@ -18,8 +18,8 @@ Create a configuration file `.php-cs-fixer.dist.php` in the root of your project
 <?php
 
 use PhpCsFixer\Finder;
-use Antipodes\PhpCsFixer\Config\Factory;
-use Antipodes\PhpCsFixer\Config\RuleSet\Php74;
+use opentech\PhpCsFixer\Config\Factory;
+use opentech\PhpCsFixer\Config\RuleSet\Php74;
 
 $config = Factory::fromRuleSet(new Php74());
 
@@ -45,8 +45,8 @@ return $config
 <?php
 
 use PhpCsFixer\Finder;
-use Antipodes\PhpCsFixer\Config\Factory;
-use Antipodes\PhpCsFixer\Config\RuleSet\Php74;
+use opentech\PhpCsFixer\Config\Factory;
+use opentech\PhpCsFixer\Config\RuleSet\Php74;
 
 -$config = Factory::fromRuleSet(new Php74());
 +$config = Factory::fromRuleSet(new Php74(), [
@@ -79,7 +79,7 @@ If you like [`composer` scripts](https://getcomposer.org/doc/articles/scripts.md
      "php": "^7.3",
    },
    "require-dev": {
-     "antipodes/php-cs-fixer-config-antipodes": "~1.0.0"
+     "opentech/php-cs-fixer-config-opentech": "~1.0.0"
 +  },
 +  "scripts": {
 +    "lint": [
